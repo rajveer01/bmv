@@ -1,0 +1,506 @@
+
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="E.D.I.T.H._files/custom.css">
+    <link rel="shortcut icon" type="image/x-icon" href="E.D.I.T.H._files/reactore.ico" />
+    <title>E.D.I.T.H.</title>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">The Title</a>
+        <div class="col-1"><img src="E.D.I.T.H._files/reactore.png" class="logo"></div>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Links</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">dropdown for Something</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="#">And the Other thing</a>
+                        <a class="dropdown-item" href="#">And this as well</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Some Settings</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="#">Or these</a>
+                        <a class="dropdown-item" href="#">Don't Miss These</a>
+                    </div>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+
+    
+
+<div class="jumbotron">
+    <h1 class="display-3">BVM For Real State</h1>
+    <p class="lead">Calculated Yours, Today</p>
+    <hr class="my-2">
+    <p>Lorem Ipsum And Some More of it</p>
+    <p class="lead">
+        <a class="btn btn-primary btn-lg" href="#" role="button">Go to Somewhere</a>
+    </p>
+</div>
+
+
+<div class="container-fluid my-3">
+    <div class="row">
+
+        <div class="col-md-3 offset-0 py-4">
+            <div class="card text-left border-primary">
+                <h5 class="card-header">BMV - Deal Analyser</h5>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="market_value">Market Value</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> &pound;</span>
+                            </div>
+                            <input type="text" oninput="this.value=this.value.replace(/[^0-9.]|[.][.]/g,'');"
+                                class="form-control" name="market_value" id="market_value"
+                                aria-describedby="helpId_market_value" placeholder="Market Value">
+                        </div>
+                        <!-- <small id="helpId_market_value" class="form-text text-muted">Please Enter the market
+                            Value</small> -->
+                    </div>
+
+                    <div class="form-group">
+                        <label for="purchase_price">Purchase Price</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">&pound;</span>
+                            </div>
+                            <input oninput="this.value=this.value.replace(/[^0-9]/g,'');" type="text"
+                                class="form-control" name="purchase_price" id="purchase_price"
+                                aria-describedby="helpId_purchase_price" placeholder="Purchase Price">
+                        </div>
+
+                        <!-- <small id="helpId_purchase_price" class="form-text text-muted">Please Select the Purchase Price</small> -->
+                    </div>
+
+                    <div class="form-group">
+                        <label for="achievable_monthly_rent">Achievable Monthly Rent</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">&pound;</span>
+                            </div>
+                            <input oninput="this.value=this.value.replace(/[^0-9]/g,'');" type="text"
+                                class="form-control" name="achievable_monthly_rent" id="achievable_monthly_rent"
+                                aria-describedby="helpId_achievable_monthly_rent" placeholder="Achievable Monthly Rent">
+                        </div>
+
+                        <!-- <small id="helpId_achievable_monthly_rent" class="form-text text-muted">Please Enter Achievable Monthly Rent</small> -->
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mortgage">Mortgage</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">&pound;</span>
+                            </div>
+                            <input oninput="this.value=this.value.replace(/[^0-9]/g,'');" type="text"
+                                class="form-control" name="mortgage" id="mortgage" aria-describedby="helpId_mortgage"
+                                placeholder="Mortgage" readonly>
+                        </div>
+
+                        <!-- <small id="helpId_mortgage" class="form-text text-muted">Mortgage Ammount will be</small> -->
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bmv">BMV</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">&pound;</span>
+                            </div>
+                            <input oninput="this.value=this.value.replace(/[^0-9]/g,'');" type="text"
+                                class="form-control" name="bmv" id="bmv" aria-describedby="helpId_BMV" placeholder="BMV"
+                                readonly>
+                        </div>
+
+                        <!-- <small id="helpId_BMV" class="form-text text-muted">BMV</small> -->
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bmv_perc">BMV Percentage</label>
+                        <div class="input-group mb-3">
+                            <input oninput="this.value=this.value.replace(/[^0-9]/g,'');" type="text"
+                                class="form-control" name="bmv_perc" id="bmv_perc" aria-describedby="helpId_bmv_perc"
+                                placeholder="BMV Percentage" dir="" readonly>
+                            <div class="input-group-append">
+                                <span class="input-group-text">&percnt;</span>
+                            </div>
+                        </div>
+
+                        <!-- <small id="helpId_bmv_perc" class="form-text text-muted">BMV Percentage will be</small> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 py-4">
+            <div class="card text-left border-success ">
+                <h5 class="card-header">Money In</h5>
+                <div class="card-body">
+
+                    <div class="form-group">
+                        <label for="deposite">Deposit (25% of the purchase Price)</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> &pound;</span>
+                            </div> <input oninput="this.value=this.value.replace(/[^0-9]/g,'');" type="text"
+                                class="form-control" name="deposite" id="deposite" aria-describedby="helpId_deposite"
+                                placeholder="Deposite" readonly>
+                        </div>
+                        <!-- <small id="helpId_deposite" class="form-text text-muted">Deposite</small> -->
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tax">Tax (SDLT)</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> &pound;</span>
+                            </div> <input oninput="this.value=this.value.replace(/[^0-9]/g,'');" type="text"
+                                class="form-control" name="tax" id="tax" aria-describedby="helpId_tax"
+                                placeholder="Tax (SDLT)">
+                        </div>
+                        <!-- <small id="helpId_tax" class="form-text text-muted">Help text</small> -->
+                    </div>
+
+                    <div class="form-group">
+                        <label for="legals">Legals</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> &pound;</span>
+                            </div>
+                            <input oninput="this.value=this.value.replace(/[^0-9]/g,'');" type="text"
+                                class="form-control" name="legals" id="legals" aria-describedby="helpId_legal"
+                                placeholder="Legals">
+                        </div>
+                        <!-- <small id="helpId_legal" class="form-text text-muted">Legals</small> -->
+                    </div>
+
+                    <div class="form-group">
+                        <label for="renovation">Renovation</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> &pound;</span>
+                            </div>
+                            <input oninput="this.value=this.value.replace(/[^0-9]/g,'');" type="text"
+                                class="form-control" name="renovation" id="renovation"
+                                aria-describedby="helpId_renovation" placeholder="Renovation">
+                        </div>
+                        <small id="helpId_renovation" class="form-text text-muted">Renovation</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="total_money_in">Total Money In</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> &pound;</span>
+                            </div>
+                            <input oninput="this.value=this.value.replace(/[^0-9]/g,'');" type="text"
+                                class="form-control" name="total_money_in" id="total_money_in"
+                                aria-describedby="helpId_total_money_in" placeholder="Total Money In" readonly>
+                        </div>
+                        <small id="helpId_total_money_in" class="form-text text-muted">Total Money In</small>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 py-4">
+            <div class="border-danger card text-left">
+                <h5 class="card-header">Monthly expenses</h5>
+                <div class="card-body">
+
+                    <div class="form-group">
+                        <label for="mortgage_payments">Mortgage Payments</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> &pound;</span>
+                            </div><input oninput="this.value=this.value.replace(/[^0-9]/g,'');" type="text"
+                                class="form-control" name="mortgage_payments" id="mortgage_payments"
+                                aria-describedby="helpId_mortgage_payments" placeholder="Mortgage Paytments" readonly>
+                        </div>
+                        <small id="helpId_mortgage_payments" class="form-text text-muted">Mortgage Payments (0.03x
+                            outstanding mortgage/ 12)</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="management">Management</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> &pound;</span>
+                            </div> <input oninput="this.value=this.value.replace(/[^0-9]/g,'');" type="text"
+                                class="form-control" name="management" id="management"
+                                aria-describedby="helpId_management" placeholder="Management" readonly>
+                        </div>
+                        <small id="helpId_management" class="form-text text-muted">Management (10% of the Rent)</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="maintenance">Maintenance/ Voids</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> &pound;</span>
+                            </div> <input oninput="this.value=this.value.replace(/[^0-9]/g,'');" type="text"
+                                class="form-control" name="maintenance" id="maintenance"
+                                aria-describedby="helpId_maintenance" placeholder="Maintenance/ Voids" readonly>
+
+                        </div> <small id="helpId_maintenance" class="form-text text-muted">Maintenance/ Voids (10% of
+                            the
+                            rent)</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="total_monthly_expenditure">Total Money Expenditure</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> &pound;</span>
+                            </div> <input oninput="this.value=this.value.replace(/[^0-9]/g,'');" type="text"
+                                class="form-control" name="total_monthly_expenditure" id="total_monthly_expenditure"
+                                aria-describedby="helpId_total_monthly_expenditure"
+                                placeholder="Total Money Expenditure" readonly>
+                        </div><small id="helpId_total_monthly_expenditure" class="form-text text-muted"> Total Money
+                            Expenditure</small>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 py-4">
+            <div class="border-info card text-left">
+                <h5 class="card-header">Return on investment</h5>
+                <div class="card-body">
+
+                    <div class="form-group">
+                        <label for="monthly_cash_flow">Monthly cash flow</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> &pound;</span>
+                            </div><input oninput="this.value=this.value.replace(/[^0-9]/g,'');" type="text"
+                                class="form-control" name="monthly_cash_flow" id="monthly_cash_flow"
+                                aria-describedby="helpId_monthly_cash_flow" placeholder="Monthly cash flow" readonly>
+                        </div>
+                        <small id="helpId_monthly_cash_flow" class="form-text text-muted">Monthly cash flow (rent -
+                            expenditure)</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="annual_cash_flow">Annual cashflow</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> &pound;</span>
+                            </div><input oninput="this.value=this.value.replace(/[^0-9]/g,'');" type="text"
+                                class="form-control" name="annual_cash_flow" id="annual_cash_flow"
+                                aria-describedby="helpId_annual_cash_flow" placeholder="Annual cashflow" readonly>
+                        </div>
+                        <small id="helpId_annual_cash_flow" class="form-text text-muted">Annual cashflow (monthly
+                            cashflow x 12)</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="roi">ROI</label>
+                        <div class="input-group mb-3">
+                            <input oninput="this.value=this.value.replace(/[^0-9]/g,'');" type="text"
+                                class="form-control" name="roi" id="roi" aria-describedby="helpId_roi" placeholder="ROI"
+                                dir="" readonly>
+                            <div class="input-group-append">
+                                <span class="input-group-text"> &percnt;</span>
+                            </div>
+                        </div>
+                        <small id="helpId_roi" class="form-text text-muted">ROI (Annual cashflow/ total money in x
+                            100)</small>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="text-center py-4">
+                <a name="btn_save" id="btn_save" class="btn btn-primary p-3" href="#" role="button">Save to the
+                    Server</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<script>
+
+    $(document).ready(function () {
+        $('#market_value, #purchase_price, #achievable_monthly_rent, #tax, #legals, #renovation').on('input', function () {
+
+            //section BMV - Deal Analyser -- read()
+            var market_value = $('#market_value').val();
+            var purchase_price = $('#purchase_price').val();
+            var achievable_monthly_rent = $('#achievable_monthly_rent').val();
+
+            //section Money In -- read()
+            var tax = $('#tax').val()
+            var legals = $('#legals').val()
+            var renovation = $('#renovation').val()
+
+            //section BMV - Deal Analyser -- write()
+            var mortgage = 0.75 * purchase_price;
+            var bmv = purchase_price - market_value;
+            var bmv_perc = bmv * 100 / market_value;
+
+            $('#mortgage').val(mortgage.toFixed(2));
+            $('#bmv').val(bmv.toFixed(2));
+            $('#bmv_perc').val(bmv_perc.toFixed(2));
+
+            //section Money In -- write()
+            var deposite = purchase_price * 0.25;
+            var total_money_in = parseFloat(deposite) + parseFloat(tax) + parseFloat(legals) + parseFloat(renovation);
+
+            $('#deposite').val(deposite.toFixed(2));
+            $('#total_money_in').val(total_money_in.toFixed(2));
+
+            //section Monthly expenses -- write()
+            var mortgage_payments = mortgage * 0.03 / 12;
+            var management = achievable_monthly_rent * 0.1;
+            var maintenance = achievable_monthly_rent * 0.1;
+            var total_monthly_expenditure = mortgage_payments + management + maintenance;
+
+            $('#mortgage_payments').val(mortgage_payments.toFixed(2));
+            $('#management').val(management.toFixed(2));
+            $('#maintenance').val(maintenance.toFixed(2));
+            $('#total_monthly_expenditure').val(total_monthly_expenditure.toFixed(2));
+
+            //section ROI -- write()
+            var monthly_cash_flow = achievable_monthly_rent - total_monthly_expenditure;
+            var annual_cash_flow = monthly_cash_flow * 12;
+            var roi = annual_cash_flow / total_money_in * 100;
+
+            $('#monthly_cash_flow').val(monthly_cash_flow.toFixed(2));
+            $('#annual_cash_flow').val(annual_cash_flow.toFixed(2));
+            $('#roi').val(roi.toFixed(2));
+
+        });
+
+        $('#btn_save').on('click', function () {
+            var market_value = $('#market_value').val();
+            var purchase_price = $('#purchase_price').val();
+            var achievable_monthly_rent = $('#achievable_monthly_rent').val();
+            var mortgage = $('#mortgage').val();
+            var bmv = $('#bmv').val();
+            var bmv_perc = $('#bmv_perc').val();
+            var deposite = $('#deposite').val();
+            var total_money_in = $('#total_money_in').val();
+            var tax = $('#tax').val();
+            var legals = $('#legals').val();
+            var renovation = $('#renovation').val();
+            var mortgage_payments = $('#mortgage_payments').val();
+            var management = $('#management').val();
+            var maintenance = $('#maintenance').val();
+            var total_monthly_expenditure = $('#total_monthly_expenditure').val();
+            var monthly_cash_flow = $('#monthly_cash_flow').val();
+            var annual_cash_flow = $('#annual_cash_flow').val();
+            var roi = $('#roi').val();
+
+            var data = {
+                'csrfmiddlewaretoken': 'p6JhBbob6o5VbV6FD7ENqdj9eMGcJ5vJdlHVFxoYShdT0ZIT9SbhUiJPkbRj1800',
+                'market_value': market_value,
+                'purchase_price': purchase_price,
+                'achievable_monthly_rent': achievable_monthly_rent,
+                'mortgage': mortgage,
+                'bmv': bmv,
+                'bmv_perc': bmv_perc,
+                'deposite': deposite,
+                'total_money_in': total_money_in,
+                'tax': tax,
+                'legals': legals,
+                'renovation': renovation,
+                'mortgage_payments': mortgage_payments,
+                'management': management,
+                'maintenance': maintenance,
+                'total_monthly_expenditure': total_monthly_expenditure,
+                'monthly_cash_flow': monthly_cash_flow,
+                'annual_cash_flow': annual_cash_flow,
+                'roi': roi
+            };
+
+            $.ajax({
+                url: "/bmv_calculator/save/",
+                async: true,
+                data: data,
+                method: 'post',
+                beforeSend: function () {
+                    // $("#spinner_old").show();
+                },
+                complete: function (response, status, xhr) {
+                    if (status == "error") {
+                        alert("Can not run the Ajax Call.");
+                    }
+                    else {
+                        alert('Saved')
+
+                        // var resp = $.parseJSON(response.responseText);
+                        // $('#old_run').val(resp.TEST_RUN_NO);
+                    }
+                    // $("#spinner_old").hide();
+                }
+            });
+
+
+
+        });
+    });
+
+
+
+</script>
+
+
+
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+</body>
+
+</html>
